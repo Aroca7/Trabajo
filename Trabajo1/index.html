@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web interactiva con diseño moderno, formularios y animaciones interactivas">
+    <meta name="author" content="Tu Nombre">
+    <meta name="keywords" content="web, diseño, p5js, formularios, interactividad">
+    <title>Página Web Interactiva</title>
+
+    <!-- Fuentes externas -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Material+Icons&display=swap" rel="stylesheet">
+
+    <!-- Normalize.css para reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Script de P5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <!-- Script para la funcionalidad del formulario -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Mi Web</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+
+                <li><a href="login.html" class="auth">Identifícate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Bienvenido a nuestra web interactiva</h1>
+            <p>Explora nuestras funcionalidades y descubre una experiencia única.</p>
+        </section>
+
+        <section class="canvas-container">
+            <h2>Animación Interactiva</h2>
+            <div id="canvas-holder"></div>
+        </section>
+
+        <section class="cards">
+            <h2>Nuestros Productos</h2>
+            <template id="card-template">
+                <div class="card">
+                    <img src="" alt="" class="product-image">
+                    <h3 class="product-title"></h3>
+                    <p class="product-description"></p>
+                </div>
+            </template>
+            <div class="card-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Mi Web. Todos los derechos reservados.</p>
+    </footer>
+    <dialog id="cookies-dialog">
+        <p>Este sitio utiliza cookies para mejorar tu experiencia. ¿Aceptas?</p>
+        <button id="accept-cookies">Aceptar</button>
+        <button id="decline-cookies">Rechazar</button>
+    </dialog>
+</body>
+</html>

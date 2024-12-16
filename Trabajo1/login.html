@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+            <label for="password">Contraseña</label>
+            <div class="password-toggle">
+                <input type="password" id="password" name="password" required>
+                <button type="button" onclick="togglePassword('password')">👁</button>
+            </div>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <div class="link">
+            <a href="registro.html">¿No tienes cuenta? Regístrate</a>
+        </div>
+    </div>
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
